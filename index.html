@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            height: 100vh;
+            width: 50px;
+            background-color: transparent;
+            border: 1 solid;
+            cursor: pointer;
+
+        }
+
+        #foreImage{
+            transition: ease-in-out 2000ms;
+            height: 100vh;
+        }
+
+        #slider {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            transition: ease-in-out 1000ms;
+            width: 90%;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <button id="prev"> < </button>
+        <div id="slider">
+            <img src="" alt="" id="foreImage">
+        </div>
+        <button id="next"> > </button>
+    </section>
+    
+</body>
+</html>
+<script src="app.js">
+  
+</script>
